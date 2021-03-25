@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" parallel="tests" thread-count="1"
+	verbose="1">
+	<test name="Test on 2 device- Test 2 ">
+		<parameter name="deviceName" value="Android-device" />
+		<parameter name="udid" value="2a64d2c13e047ece" />
+		<parameter name="platform" value="10" />
+		<classes>
+			 <class name="testSuite.VerifyProductDetailsTest" />
+		</classes>
+	</test>
+</suite>
+

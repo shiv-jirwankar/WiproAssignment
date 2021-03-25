@@ -1,0 +1,727 @@
+2021-03-24 16:56:06,771 INFO  [Log] Inside Driver Class 
+2021-03-24 16:56:06,778 INFO  [Log] driver is null 
+2021-03-24 16:56:16,477 INFO  [Log] **********Appium server started at port 4723********** 
+2021-03-24 16:56:16,487 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 16:56:16,492 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 16:56:18,332 INFO  [Log] Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\shivkumarj\eclipse-workspace\WiproAssignment\app\coinzoom.apk' does not exist or is not accessible
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The application at 'C:\Users\shivkumarj\eclipse-workspace\WiproAssignment\app\coinzoom.apk' does not exist or is not accessible
+    at getResponseForW3CError (C:\Users\shivkumarj\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\shivkumarj\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver 
+2021-03-24 16:57:31,240 INFO  [Log] Inside Driver Class 
+2021-03-24 16:57:31,248 INFO  [Log] driver is null 
+2021-03-24 16:57:31,256 INFO  [Log] **********Appium server already running at port 4723********** 
+2021-03-24 16:57:31,265 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 16:57:31,270 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 16:57:49,014 INFO  [Log] Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.amazon.mShop.android.shopping' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shivkumarj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2a64d2c13e047ece shell am start -W -n com.amazon.mShop.android.shopping/com.amazon.mShop.sso.SigninPromptActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Stderr: 'Security exception: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.amazon.mShop.android.shopping/com.amazon.mShop.sso.SigninPromptActivity } from null (pid=1521, uid=2000) not exported from uid 10214
+
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.amazon.mShop.android.shopping/com.amazon.mShop.sso.SigninPromptActivity } from null (pid=1521, uid=2000) not exported from uid 10214
+	at com.android.server.am.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1922)
+	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:631)
+	at com.android.server.am.ActivityStarter.startActivityLocked(ActivityStarter.java:411)
+	at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:1281)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:6281)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:419)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:142)
+	at android.os.ShellCommand.exec(ShellCommand.java:96)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:18832)
+	at android.os.Binder.shellCommand(Binder.java:581)
+	at android.os.Binder.onTransact(Binder.java:481)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4785)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3888)
+	at android.os.Binder.execTransact(Binder.java:682)'; Code: '255'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.amazon.mShop.android.shopping' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shivkumarj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s 2a64d2c13e047ece shell am start -W -n com.amazon.mShop.android.shopping/com.amazon.mShop.sso.SigninPromptActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Stderr: 'Security exception: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.amazon.mShop.android.shopping/com.amazon.mShop.sso.SigninPromptActivity } from null (pid=1521, uid=2000) not exported from uid 10214
+
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.amazon.mShop.android.shopping/com.amazon.mShop.sso.SigninPromptActivity } from null (pid=1521, uid=2000) not exported from uid 10214
+	at com.android.server.am.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1922)
+	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:631)
+	at com.android.server.am.ActivityStarter.startActivityLocked(ActivityStarter.java:411)
+	at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:1281)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:6281)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:419)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:142)
+	at android.os.ShellCommand.exec(ShellCommand.java:96)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:18832)
+	at android.os.Binder.shellCommand(Binder.java:581)
+	at android.os.Binder.onTransact(Binder.java:481)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4785)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3888)
+	at android.os.Binder.execTransact(Binder.java:682)'; Code: '255'
+    at getResponseForW3CError (C:\Users\shivkumarj\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\shivkumarj\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver 
+2021-03-24 17:03:07,652 INFO  [Log] Inside Driver Class 
+2021-03-24 17:03:07,661 INFO  [Log] driver is null 
+2021-03-24 17:03:07,669 INFO  [Log] **********Appium server already running at port 4723********** 
+2021-03-24 17:03:07,678 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 17:03:07,682 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 17:03:18,321 INFO  [Log] Message04dbb383-885a-48cd-82d1-e8b3028c4fb4 
+2021-03-24 17:03:18,327 INFO  [Log] Session Returned by Driver: 04dbb383-885a-48cd-82d1-e8b3028c4fb4 
+2021-03-24 17:03:18,495 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 17:03:22,916 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 17:03:24,248 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 17:03:28,454 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 17:03:30,137 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 17:03:32,153 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 17:03:33,390 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 17:03:35,455 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 17:59:14,933 INFO  [Log] Inside Driver Class 
+2021-03-24 17:59:14,941 INFO  [Log] driver is null 
+2021-03-24 17:59:14,949 INFO  [Log] **********Appium server already running at port 4723********** 
+2021-03-24 17:59:14,959 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 17:59:14,963 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 17:59:27,257 INFO  [Log] Message2ee44890-6377-4f09-8ae1-106b9157d76a 
+2021-03-24 17:59:27,263 INFO  [Log] Session Returned by Driver: 2ee44890-6377-4f09-8ae1-106b9157d76a 
+2021-03-24 17:59:27,397 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 17:59:30,765 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 17:59:32,961 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 17:59:34,515 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 17:59:37,447 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 17:59:38,236 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 17:59:38,354 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 17:59:38,474 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 18:01:23,615 INFO  [Log] Inside Driver Class 
+2021-03-24 18:01:23,623 INFO  [Log] driver is null 
+2021-03-24 18:01:23,631 INFO  [Log] **********Appium server already running at port 4723********** 
+2021-03-24 18:01:23,641 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:01:23,645 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:01:35,800 INFO  [Log] Message383e7e51-a573-4e77-9409-71791d0adf08 
+2021-03-24 18:01:35,806 INFO  [Log] Session Returned by Driver: 383e7e51-a573-4e77-9409-71791d0adf08 
+2021-03-24 18:01:35,941 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:01:38,949 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:01:40,918 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 18:01:42,491 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 18:01:45,646 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 18:01:46,516 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 18:01:46,841 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 18:01:47,248 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 18:04:48,808 INFO  [Log] Inside Driver Class 
+2021-03-24 18:04:48,817 INFO  [Log] driver is null 
+2021-03-24 18:04:48,826 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:04:48,835 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:05:01,304 INFO  [Log] Message4f2718fc-c4eb-4f5a-a1e6-bd3eaf19bdfc 
+2021-03-24 18:05:01,312 INFO  [Log] Session Returned by Driver: 4f2718fc-c4eb-4f5a-a1e6-bd3eaf19bdfc 
+2021-03-24 18:05:01,443 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:05:06,599 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:05:09,203 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 18:05:10,719 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 18:05:14,134 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 18:05:15,155 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 18:05:15,490 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 18:05:15,852 INFO  [Log] Scrolling to text: Add to Cart  
+2021-03-24 18:06:00,958 INFO  [Log] Inside Driver Class 
+2021-03-24 18:06:00,966 INFO  [Log] driver is null 
+2021-03-24 18:06:00,975 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:06:00,981 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:06:13,466 INFO  [Log] Message8da05b20-5c58-4ca3-8ee0-a19a7d6be89b 
+2021-03-24 18:06:13,472 INFO  [Log] Session Returned by Driver: 8da05b20-5c58-4ca3-8ee0-a19a7d6be89b 
+2021-03-24 18:06:13,604 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:06:16,877 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:06:37,557 INFO  [Log] Inside Driver Class 
+2021-03-24 18:06:37,565 INFO  [Log] driver is null 
+2021-03-24 18:06:37,574 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:06:37,581 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:06:50,103 INFO  [Log] Messagee9b38535-dc09-4351-af1f-a0c5d39153a7 
+2021-03-24 18:06:50,113 INFO  [Log] Session Returned by Driver: e9b38535-dc09-4351-af1f-a0c5d39153a7 
+2021-03-24 18:06:50,276 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:06:53,199 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:06:55,285 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 18:06:58,388 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 18:07:01,348 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 18:07:02,324 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 18:07:02,734 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 18:07:03,159 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 18:10:56,194 INFO  [Log] Inside Driver Class 
+2021-03-24 18:10:56,206 INFO  [Log] driver is null 
+2021-03-24 18:10:56,218 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:10:56,228 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:11:08,637 INFO  [Log] Messageec4d657b-6fb0-45e9-8bd6-dd7926429580 
+2021-03-24 18:11:08,644 INFO  [Log] Session Returned by Driver: ec4d657b-6fb0-45e9-8bd6-dd7926429580 
+2021-03-24 18:11:38,050 INFO  [Log] Inside Driver Class 
+2021-03-24 18:11:38,059 INFO  [Log] driver is null 
+2021-03-24 18:11:38,068 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:11:38,078 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:11:50,314 INFO  [Log] Messagee8b08c47-8357-4f97-a44c-a900f15ddfa9 
+2021-03-24 18:11:50,322 INFO  [Log] Session Returned by Driver: e8b08c47-8357-4f97-a44c-a900f15ddfa9 
+2021-03-24 18:11:50,464 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:11:54,690 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:12:08,838 INFO  [Log] Inside Driver Class 
+2021-03-24 18:12:08,847 INFO  [Log] driver is null 
+2021-03-24 18:12:08,856 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:12:08,863 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:12:20,175 INFO  [Log] Messageb1065440-8ed0-47cc-b751-179cebc66b27 
+2021-03-24 18:12:20,181 INFO  [Log] Session Returned by Driver: b1065440-8ed0-47cc-b751-179cebc66b27 
+2021-03-24 18:12:20,316 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:12:23,664 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:12:25,919 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 18:12:27,490 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 18:12:30,873 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 18:12:31,439 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 18:12:31,533 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 18:12:31,713 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 18:12:44,933 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-24 18:13:24,306 INFO  [Log] Inside Driver Class 
+2021-03-24 18:13:24,318 INFO  [Log] driver is null 
+2021-03-24 18:13:24,328 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:13:24,339 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:13:42,744 INFO  [Log] Messageb58f47d5-b558-4401-9869-44024ec0636c 
+2021-03-24 18:13:42,750 INFO  [Log] Session Returned by Driver: b58f47d5-b558-4401-9869-44024ec0636c 
+2021-03-24 18:13:42,885 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:21:51,732 INFO  [Log] Inside Driver Class 
+2021-03-24 18:21:51,745 INFO  [Log] driver is null 
+2021-03-24 18:21:51,757 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:21:51,764 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:22:09,936 INFO  [Log] Messagea132e7b2-5b44-4a57-b54b-6d4a219c71f7 
+2021-03-24 18:22:09,943 INFO  [Log] Session Returned by Driver: a132e7b2-5b44-4a57-b54b-6d4a219c71f7 
+2021-03-24 18:22:10,095 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 18:22:14,901 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:22:20,014 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:22:22,106 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 18:22:24,124 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 18:22:27,356 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 18:22:27,991 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 18:22:28,143 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 18:22:28,327 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 18:22:40,159 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-24 18:24:10,938 INFO  [Log] Inside Driver Class 
+2021-03-24 18:24:10,949 INFO  [Log] driver is null 
+2021-03-24 18:24:10,963 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:24:10,974 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:24:29,195 INFO  [Log] Message891ec73f-85d8-4552-8eb9-dbd12c37cf2d 
+2021-03-24 18:24:29,206 INFO  [Log] Session Returned by Driver: 891ec73f-85d8-4552-8eb9-dbd12c37cf2d 
+2021-03-24 18:24:29,354 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 18:24:32,902 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:24:35,890 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:24:36,852 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 18:24:38,402 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 18:24:41,326 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 18:24:42,151 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 18:24:42,366 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 18:24:42,618 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 18:24:54,432 INFO  [Log] Getting the description of product added to the cart 
+2021-03-24 18:26:20,691 INFO  [Log] Inside Driver Class 
+2021-03-24 18:26:20,702 INFO  [Log] driver is null 
+2021-03-24 18:26:20,711 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:26:20,719 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:26:38,932 INFO  [Log] Messageb2e02cf9-dd59-4d9a-a03d-b92457bf8cbe 
+2021-03-24 18:26:38,939 INFO  [Log] Session Returned by Driver: b2e02cf9-dd59-4d9a-a03d-b92457bf8cbe 
+2021-03-24 18:26:39,078 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 18:26:40,846 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:26:44,514 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:26:45,965 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 18:26:47,490 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 18:26:50,404 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 18:26:50,822 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 18:26:50,934 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 18:26:51,047 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 18:27:51,524 INFO  [Log] Getting the description of product added to the cart 
+2021-03-24 18:28:02,526 INFO  [Log] Getting the price of product added to the cart 
+2021-03-24 18:34:41,059 INFO  [Log] Inside Driver Class 
+2021-03-24 18:34:41,066 INFO  [Log] driver is null 
+2021-03-24 18:34:41,075 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:34:41,081 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:34:59,122 INFO  [Log] Message895f154d-8c6b-45ac-98ed-ac90850b5f45 
+2021-03-24 18:34:59,128 INFO  [Log] Session Returned by Driver: 895f154d-8c6b-45ac-98ed-ac90850b5f45 
+2021-03-24 18:34:59,272 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 18:35:02,756 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:35:04,151 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:35:13,733 INFO  [Log] Inside Driver Class 
+2021-03-24 18:35:13,740 INFO  [Log] driver is null 
+2021-03-24 18:35:13,748 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:35:13,754 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:35:31,612 INFO  [Log] Message4baeae48-2a15-4bcd-be7f-9c8edd156c2d 
+2021-03-24 18:35:31,618 INFO  [Log] Session Returned by Driver: 4baeae48-2a15-4bcd-be7f-9c8edd156c2d 
+2021-03-24 18:35:31,759 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 18:35:35,245 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:35:38,074 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:35:38,923 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 18:35:41,533 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 18:35:44,751 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 18:35:45,364 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 18:35:45,622 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 18:35:46,404 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 18:35:57,826 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-24 18:35:59,632 INFO  [Log] Getting the description of product added to the cart 
+2021-03-24 18:59:31,374 INFO  [Log] Inside Driver Class 
+2021-03-24 18:59:31,385 INFO  [Log] driver is null 
+2021-03-24 18:59:31,394 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 18:59:31,401 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 18:59:50,147 INFO  [Log] Message3792c028-bf2f-4f30-b964-e3c72641bb2d 
+2021-03-24 18:59:50,153 INFO  [Log] Session Returned by Driver: 3792c028-bf2f-4f30-b964-e3c72641bb2d 
+2021-03-24 18:59:50,298 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 18:59:52,302 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 18:59:56,678 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 18:59:57,533 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:00:01,321 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 19:00:04,237 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 19:00:04,998 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 19:00:05,247 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 19:00:05,577 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 19:01:13,145 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-24 19:01:14,141 INFO  [Log] Getting the description of product added to the cart 
+2021-03-24 19:01:17,499 INFO  [Log] Getting the price of product added to the cart 
+2021-03-24 19:06:10,855 INFO  [Log] Inside Driver Class 
+2021-03-24 19:06:10,867 INFO  [Log] driver is null 
+2021-03-24 19:06:10,875 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:06:10,882 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:06:28,834 INFO  [Log] Message0a5a01d9-7087-4afe-b61b-70d7fc010880 
+2021-03-24 19:06:28,839 INFO  [Log] Session Returned by Driver: 0a5a01d9-7087-4afe-b61b-70d7fc010880 
+2021-03-24 19:06:28,975 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:06:30,855 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 19:06:36,069 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:07:31,841 INFO  [Log] Inside Driver Class 
+2021-03-24 19:07:31,848 INFO  [Log] driver is null 
+2021-03-24 19:07:31,856 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:07:31,867 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:07:50,187 INFO  [Log] Messageba829640-5e58-4252-9b06-0d89e87ab0da 
+2021-03-24 19:07:50,194 INFO  [Log] Session Returned by Driver: ba829640-5e58-4252-9b06-0d89e87ab0da 
+2021-03-24 19:07:50,337 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:07:52,228 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:07:57,065 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:08:35,167 INFO  [Log] Inside Driver Class 
+2021-03-24 19:08:35,175 INFO  [Log] driver is null 
+2021-03-24 19:08:35,183 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:08:35,194 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:08:53,175 INFO  [Log] Message4270220f-55ad-449b-9390-12ad9eafa4aa 
+2021-03-24 19:08:53,181 INFO  [Log] Session Returned by Driver: 4270220f-55ad-449b-9390-12ad9eafa4aa 
+2021-03-24 19:08:53,320 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:08:55,056 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 19:08:59,317 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:09:00,743 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:09:03,823 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 19:09:06,550 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 19:09:07,384 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 19:09:07,731 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 19:09:08,171 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 19:09:21,345 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-24 19:09:22,388 INFO  [Log] Getting the description of product added to the cart 
+2021-03-24 19:09:24,831 INFO  [Log] Getting the price of product added to the cart 
+2021-03-24 19:12:46,862 INFO  [Log] Inside Driver Class 
+2021-03-24 19:12:46,870 INFO  [Log] driver is null 
+2021-03-24 19:12:46,878 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:12:46,889 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:13:04,893 INFO  [Log] Messagec92c6d67-4054-4f12-baa6-6dbd29fab94d 
+2021-03-24 19:13:04,899 INFO  [Log] Session Returned by Driver: c92c6d67-4054-4f12-baa6-6dbd29fab94d 
+2021-03-24 19:13:05,049 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:13:08,732 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 19:13:12,042 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:13:14,412 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:13:16,417 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 19:13:19,504 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 19:13:20,319 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 19:13:20,632 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 19:13:21,081 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 19:13:26,681 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-24 19:13:26,750 INFO  [Log] Getting the description of product added to the cart 
+2021-03-24 19:13:33,632 INFO  [Log] Getting the price of product added to the cart 
+2021-03-24 19:14:57,729 INFO  [Log] Inside Driver Class 
+2021-03-24 19:14:57,736 INFO  [Log] driver is null 
+2021-03-24 19:14:57,744 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:14:57,755 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:15:14,741 INFO  [Log] Messagec73c96b9-9f29-4c76-8b1c-aab027cadc64 
+2021-03-24 19:15:14,747 INFO  [Log] Session Returned by Driver: c73c96b9-9f29-4c76-8b1c-aab027cadc64 
+2021-03-24 19:15:14,886 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:15:18,454 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 19:15:21,258 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:15:22,115 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:15:24,362 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 19:15:26,991 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 19:15:27,798 INFO  [Log] Getting the description of 3 product from the search result list 
+2021-03-24 19:15:28,011 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 19:15:28,237 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 19:15:50,923 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-24 19:15:53,963 INFO  [Log] Getting the description of product added to the cart 
+2021-03-24 19:15:56,444 INFO  [Log] Getting the price of product added to the cart 
+2021-03-24 19:21:26,785 INFO  [Log] Inside Driver Class 
+2021-03-24 19:21:26,791 INFO  [Log] driver is null 
+2021-03-24 19:21:26,798 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:21:26,803 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:21:44,819 INFO  [Log] Messagec41e9ac6-5cea-47d1-96ac-7475c947e582 
+2021-03-24 19:21:44,824 INFO  [Log] Session Returned by Driver: c41e9ac6-5cea-47d1-96ac-7475c947e582 
+2021-03-24 19:21:44,960 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:21:47,961 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 19:21:50,616 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:21:52,054 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:21:53,626 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 19:21:56,172 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 19:22:47,285 INFO  [Log] Inside Driver Class 
+2021-03-24 19:22:47,293 INFO  [Log] driver is null 
+2021-03-24 19:22:47,301 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:22:47,308 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:23:04,456 INFO  [Log] Message35e3f684-5cc9-445e-9c3b-62ddcd92302f 
+2021-03-24 19:23:04,462 INFO  [Log] Session Returned by Driver: 35e3f684-5cc9-445e-9c3b-62ddcd92302f 
+2021-03-24 19:23:04,605 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:23:06,341 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 19:23:10,756 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:23:12,468 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:23:14,039 INFO  [Log] Getting the name of 3 product from the search result list 
+2021-03-24 19:23:17,303 INFO  [Log] Getting the price of 3 product from the search result list 
+2021-03-24 19:25:08,935 INFO  [Log] Inside Driver Class 
+2021-03-24 19:25:08,943 INFO  [Log] driver is null 
+2021-03-24 19:25:08,953 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:25:08,960 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:25:27,025 INFO  [Log] Messagef8890f4d-fc7d-4d36-93d5-6010c516a518 
+2021-03-24 19:25:27,032 INFO  [Log] Session Returned by Driver: f8890f4d-fc7d-4d36-93d5-6010c516a518 
+2021-03-24 19:25:27,172 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:25:29,011 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 19:25:31,324 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:25:33,123 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:25:35,513 INFO  [Log] Getting the name of 2 product from the search result list 
+2021-03-24 19:25:38,060 INFO  [Log] Getting the price of 2 product from the search result list 
+2021-03-24 19:25:38,568 INFO  [Log] Getting the description of 2 product from the search result list 
+2021-03-24 19:25:38,648 INFO  [Log] Selecting 3 product from the search result list 
+2021-03-24 19:25:38,732 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 19:26:21,142 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-24 19:26:43,050 INFO  [Log] Getting the description of product added to the cart 
+2021-03-24 19:26:44,117 INFO  [Log] Getting the price of product added to the cart 
+2021-03-24 19:26:55,020 INFO  [Log] Inside Driver Class 
+2021-03-24 19:26:55,027 INFO  [Log] driver is null 
+2021-03-24 19:26:55,036 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:26:55,042 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:27:13,245 INFO  [Log] Message0d846692-13b2-4e3e-bda7-d8742d0ff462 
+2021-03-24 19:27:13,254 INFO  [Log] Session Returned by Driver: 0d846692-13b2-4e3e-bda7-d8742d0ff462 
+2021-03-24 19:27:13,430 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:27:15,236 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 19:27:19,038 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:27:19,839 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:27:22,359 INFO  [Log] Getting the name of 2 product from the search result list 
+2021-03-24 19:27:24,949 INFO  [Log] Getting the price of 2 product from the search result list 
+2021-03-24 19:27:25,321 INFO  [Log] Getting the description of 2 product from the search result list 
+2021-03-24 19:27:25,600 INFO  [Log] Selecting 2 product from the search result list 
+2021-03-24 19:27:26,016 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 19:28:09,735 INFO  [Log] Inside Driver Class 
+2021-03-24 19:28:09,743 INFO  [Log] driver is null 
+2021-03-24 19:28:09,752 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-24 19:28:09,758 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 19:28:27,205 INFO  [Log] Message031b3457-05b9-4c7b-9862-c23ab804b1ab 
+2021-03-24 19:28:27,210 INFO  [Log] Session Returned by Driver: 031b3457-05b9-4c7b-9862-c23ab804b1ab 
+2021-03-24 19:28:27,341 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-24 19:28:29,199 INFO  [Log] Clicking on SEARCH button 
+2021-03-24 19:28:32,909 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-24 19:28:33,748 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-24 19:28:35,288 INFO  [Log] Getting the name of 2 product from the search result list 
+2021-03-24 19:28:38,483 INFO  [Log] Getting the price of 2 product from the search result list 
+2021-03-24 19:28:38,818 INFO  [Log] Getting the description of 2 product from the search result list 
+2021-03-24 19:28:38,949 INFO  [Log] Selecting 2 product from the search result list 
+2021-03-24 19:28:39,054 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-24 19:29:17,110 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-24 19:29:36,048 INFO  [Log] Getting the description of product added to the cart 
+2021-03-24 19:29:38,523 INFO  [Log] Getting the price of product added to the cart 
+2021-03-24 22:53:39,749 INFO  [Log] Inside Driver Class 
+2021-03-24 22:53:39,755 INFO  [Log] driver is null 
+2021-03-24 22:53:39,762 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: emulator-5554} 
+2021-03-24 22:53:39,767 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 22:53:49,436 INFO  [Log] Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shivkumarj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -g C:\\Users\\shivkumarj\\eclipse-workspace\\WiproAssignment\\app\\Amazon_shopping.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\shivkumarj\eclipse-workspace\WiproAssignment\app\Amazon_shopping.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]'; Code: '1'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shivkumarj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -g C:\\Users\\shivkumarj\\eclipse-workspace\\WiproAssignment\\app\\Amazon_shopping.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\shivkumarj\eclipse-workspace\WiproAssignment\app\Amazon_shopping.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]'; Code: '1'
+    at getResponseForW3CError (C:\Users\shivkumarj\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\shivkumarj\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:381:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver 
+2021-03-24 22:56:47,863 INFO  [Log] Inside Driver Class 
+2021-03-24 22:56:47,869 INFO  [Log] driver is null 
+2021-03-24 22:56:47,876 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: emulator-5554} 
+2021-03-24 22:56:47,881 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-24 22:56:55,837 INFO  [Log] Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shivkumarj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -g C:\\Users\\shivkumarj\\eclipse-workspace\\WiproAssignment\\app\\Amazon_shopping.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\shivkumarj\eclipse-workspace\WiproAssignment\app\Amazon_shopping.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]'; Code: '1'
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\shivkumarj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 install -g C:\\Users\\shivkumarj\\eclipse-workspace\\WiproAssignment\\app\\Amazon_shopping.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\shivkumarj\eclipse-workspace\WiproAssignment\app\Amazon_shopping.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]'; Code: '1'
+    at getResponseForW3CError (C:\Users\shivkumarj\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\shivkumarj\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:381:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver 
+2021-03-25 11:44:44,013 INFO  [Log] Inside Driver Class 
+2021-03-25 11:44:44,019 INFO  [Log] driver is null 
+2021-03-25 11:44:44,026 INFO  [Log] Capabilities {deviceName: emulator-5554-Android, platformVersion: 10, udid: emulator-5554} 
+2021-03-25 11:44:44,031 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 11:44:44,686 INFO  [Log] Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Device emulator-5554 was not in the list of connected devices
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Device emulator-5554 was not in the list of connected devices
+    at getResponseForW3CError (C:\Users\shivkumarj\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\shivkumarj\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:381:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SHIVKUMARJ-W10', ip: '172.27.46.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
+Driver info: driver.version: AndroidDriver 
+2021-03-25 11:45:46,999 INFO  [Log] Inside Driver Class 
+2021-03-25 11:45:47,007 INFO  [Log] driver is null 
+2021-03-25 11:45:47,017 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 11:45:47,024 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 11:46:06,660 INFO  [Log] Message8c74c234-b3c8-4599-8478-b88eac2de092 
+2021-03-25 11:46:06,667 INFO  [Log] Session Returned by Driver: 8c74c234-b3c8-4599-8478-b88eac2de092 
+2021-03-25 11:46:06,920 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 11:46:09,043 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 11:46:13,229 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 11:46:14,065 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 11:46:16,458 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 11:46:18,950 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 11:46:19,282 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 11:46:19,435 INFO  [Log] Product Name on search result is: Glassiano, Product Price on search result is: 1,049.00, Product description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED Smart TV 
+2021-03-25 11:46:19,441 INFO  [Log] Selecting 2 product from the search result list 
+2021-03-25 11:46:19,558 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-25 11:46:52,710 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-25 11:47:12,279 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 11:47:14,592 INFO  [Log] Getting the price of product added to the cart 
+2021-03-25 11:47:15,504 INFO  [Log] Product Price on Checkout screen is: 104900, Product Description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED 
+2021-03-25 11:51:44,205 INFO  [Log] Inside Driver Class 
+2021-03-25 11:51:44,214 INFO  [Log] driver is null 
+2021-03-25 11:51:44,222 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 11:51:44,233 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 11:52:11,335 INFO  [Log] Message47aba014-2fb7-4573-8982-f470e0159a85 
+2021-03-25 11:52:11,342 INFO  [Log] Session Returned by Driver: 47aba014-2fb7-4573-8982-f470e0159a85 
+2021-03-25 11:52:11,481 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 11:52:15,504 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 11:52:18,072 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 11:52:20,402 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 11:52:22,753 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 11:52:26,169 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 11:52:26,880 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 11:52:27,218 INFO  [Log] Product Name on search result is: VU, Product Price on search result is: 3,500.00, Product description on search result is: VU 163 cm (65 Inches) 4K Ultra HD Smart Android LED TV 65PM (Black) (2020 Model) 
+2021-03-25 11:52:27,224 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 11:52:27,571 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-25 11:52:40,310 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-25 11:52:42,152 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 11:52:46,903 INFO  [Log] Getting the price of product added to the cart 
+2021-03-25 11:52:47,609 INFO  [Log] Product Price on Checkout screen is: , Product Description on search result is: VU 163 cm (65 Inches) 4K Ultra HD Smart Android LED TV 65PM (Bla 
+2021-03-25 12:05:51,500 INFO  [Log] Inside Driver Class 
+2021-03-25 12:05:51,508 INFO  [Log] driver is null 
+2021-03-25 12:05:51,517 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:05:51,525 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:06:10,590 INFO  [Log] Message81834d75-010a-4137-a138-4a656ce4de7c 
+2021-03-25 12:06:10,597 INFO  [Log] Session Returned by Driver: 81834d75-010a-4137-a138-4a656ce4de7c 
+2021-03-25 12:06:10,741 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:06:14,717 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:06:15,947 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:06:48,662 INFO  [Log] Inside Driver Class 
+2021-03-25 12:06:48,670 INFO  [Log] driver is null 
+2021-03-25 12:06:48,679 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:06:48,686 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:07:06,854 INFO  [Log] Message43c6c834-9525-4f1c-bb13-259bdc770c6e 
+2021-03-25 12:07:06,861 INFO  [Log] Session Returned by Driver: 43c6c834-9525-4f1c-bb13-259bdc770c6e 
+2021-03-25 12:07:07,000 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:07:11,012 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:07:14,890 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:11:49,852 INFO  [Log] Inside Driver Class 
+2021-03-25 12:11:49,857 INFO  [Log] driver is null 
+2021-03-25 12:11:49,864 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:11:49,869 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:12:08,351 INFO  [Log] Message4021ad87-066a-423e-a974-2c2bf9acbee3 
+2021-03-25 12:12:08,356 INFO  [Log] Session Returned by Driver: 4021ad87-066a-423e-a974-2c2bf9acbee3 
+2021-03-25 12:12:08,493 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:12:10,318 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:12:15,307 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:12:17,573 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:12:20,005 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:12:22,478 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:15:30,187 INFO  [Log] Inside Driver Class 
+2021-03-25 12:15:30,199 INFO  [Log] driver is null 
+2021-03-25 12:15:30,208 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:15:30,215 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:15:47,646 INFO  [Log] Messaged9fa8d3c-76b8-4fcc-8dd8-bc7a707b2e51 
+2021-03-25 12:15:47,653 INFO  [Log] Session Returned by Driver: d9fa8d3c-76b8-4fcc-8dd8-bc7a707b2e51 
+2021-03-25 12:15:47,788 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:15:52,022 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:15:55,991 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:15:58,320 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:16:02,655 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:16:03,386 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:16:04,079 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:16:04,431 INFO  [Log] Product Name on search result is: Glassiano, Product Price on search result is: 1,049.00, Product description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED Smart TV 
+2021-03-25 12:16:04,438 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:16:04,750 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-25 12:16:49,387 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-25 12:17:15,291 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 12:17:15,936 INFO  [Log] Getting the price of product added to the cart 
+2021-03-25 12:17:17,166 INFO  [Log] Product Price on Checkout screen is: 1,049.00, Product Description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED 
+2021-03-25 12:27:07,685 INFO  [Log] Inside Driver Class 
+2021-03-25 12:27:07,693 INFO  [Log] driver is null 
+2021-03-25 12:27:07,703 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:27:07,716 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:27:26,201 INFO  [Log] Message83530805-4abb-4964-9c4e-891f9a74c0d8 
+2021-03-25 12:27:26,208 INFO  [Log] Session Returned by Driver: 83530805-4abb-4964-9c4e-891f9a74c0d8 
+2021-03-25 12:27:26,389 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:27:29,362 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:27:34,128 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:27:35,068 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:27:38,518 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:27:40,872 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:27:41,580 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:27:41,897 INFO  [Log] Product Name on search result is: Glassiano, Product Price on search result is: 1,049.00, Product description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED Smart TV 
+2021-03-25 12:27:41,903 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:27:42,271 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-25 12:28:20,242 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-25 12:28:36,737 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 12:28:38,151 INFO  [Log] Getting the price of product added to the cart 
+2021-03-25 12:28:39,524 INFO  [Log] Product Price on Checkout screen is: 1,049.00, Product Description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED 
+2021-03-25 12:31:31,703 INFO  [Log] Inside Driver Class 
+2021-03-25 12:31:31,714 INFO  [Log] driver is null 
+2021-03-25 12:31:31,723 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:31:31,736 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:31:49,480 INFO  [Log] Messagea8c0102c-4eef-4cbe-83a5-e572b47b0fdf 
+2021-03-25 12:31:49,486 INFO  [Log] Session Returned by Driver: a8c0102c-4eef-4cbe-83a5-e572b47b0fdf 
+2021-03-25 12:31:49,689 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:31:53,832 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:31:56,417 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:31:58,384 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:32:00,465 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:32:03,183 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:32:03,787 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:32:04,080 INFO  [Log] Product Name on search result is: VU, Product Price on search result is: 19,499.00, Product description on search result is: VU 163 cm (65 Inches) 4K Ultra HD Smart Android LED TV 65PM (Black) (2020 Model) 
+2021-03-25 12:32:04,086 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:32:04,468 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-25 12:32:09,899 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-25 12:32:10,041 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 12:32:13,353 INFO  [Log] Getting the price of product added to the cart 
+2021-03-25 12:32:17,154 INFO  [Log] Product Price on Checkout screen is: , Product Description on search result is: VU 163 cm (65 Inches) 4K Ultra HD Smart Android LED TV 65PM (Bla 
+2021-03-25 12:33:15,470 INFO  [Log] Inside Driver Class 
+2021-03-25 12:33:15,479 INFO  [Log] driver is null 
+2021-03-25 12:33:15,488 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:33:15,496 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:33:33,157 INFO  [Log] Message799f0c51-9957-41bd-af09-0495f17de063 
+2021-03-25 12:33:33,163 INFO  [Log] Session Returned by Driver: 799f0c51-9957-41bd-af09-0495f17de063 
+2021-03-25 12:33:33,349 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:33:37,461 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:33:41,124 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:33:43,432 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:33:46,401 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:33:49,558 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:33:50,396 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:33:50,768 INFO  [Log] Product Name on search result is: Glassiano, Product Price on search result is: 1,049.00, Product description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED Smart TV 
+2021-03-25 12:33:50,775 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:33:51,211 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-25 12:34:55,665 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-25 12:35:25,327 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 12:35:26,278 INFO  [Log] Getting the price of product added to the cart 
+2021-03-25 12:35:26,870 INFO  [Log] Product Price on Checkout screen is: 1,049.00, Product Description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED 
+2021-03-25 12:39:14,916 INFO  [Log] Inside Driver Class 
+2021-03-25 12:39:14,931 INFO  [Log] driver is null 
+2021-03-25 12:39:14,948 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:39:14,958 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:39:32,856 INFO  [Log] Message0eb71789-d5d2-4ea5-9033-24500dd2e5fb 
+2021-03-25 12:39:32,872 INFO  [Log] Session Returned by Driver: 0eb71789-d5d2-4ea5-9033-24500dd2e5fb 
+2021-03-25 12:39:33,097 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:39:35,790 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:39:39,313 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:39:41,299 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:39:44,210 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:39:47,200 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:39:47,853 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:39:48,146 INFO  [Log] Product Name on search result is: VU, Product Price on search result is: 4,500.00, Product description on search result is: VU 163 cm (65 Inches) 4K Ultra HD Smart Android LED TV 65PM (Black) (2020 Model) 
+2021-03-25 12:39:48,155 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:39:48,475 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-25 12:39:59,399 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-25 12:40:02,954 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 12:40:05,445 INFO  [Log] Getting the price of product added to the cart 
+2021-03-25 12:40:06,661 INFO  [Log] Product Price on Checkout screen is: , Product Description on search result is: VU 163 cm (65 Inches) 4K Ultra HD Smart Android LED TV 65PM (Bla 
+2021-03-25 12:42:13,180 INFO  [Log] Inside Driver Class 
+2021-03-25 12:42:13,190 INFO  [Log] driver is null 
+2021-03-25 12:42:13,207 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:42:13,217 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:42:30,714 INFO  [Log] Message3647bd62-2d6e-4a0a-bf2c-a850f8eda5d2 
+2021-03-25 12:42:30,724 INFO  [Log] Session Returned by Driver: 3647bd62-2d6e-4a0a-bf2c-a850f8eda5d2 
+2021-03-25 12:42:30,924 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:42:34,377 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:42:37,277 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:42:39,310 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:42:43,931 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:42:44,750 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:42:45,400 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:42:45,755 INFO  [Log] Product Name on search result is: Glassiano, Product Price on search result is: 1,049.00, Product description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED Smart TV 
+2021-03-25 12:42:45,760 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:42:46,176 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-25 12:43:37,046 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-25 12:46:12,396 INFO  [Log] Inside Driver Class 
+2021-03-25 12:46:12,406 INFO  [Log] driver is null 
+2021-03-25 12:46:12,414 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:46:12,421 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:46:30,292 INFO  [Log] Messaged27ebb9d-0ad8-44cf-8320-7a2832f2b720 
+2021-03-25 12:46:30,307 INFO  [Log] Session Returned by Driver: d27ebb9d-0ad8-44cf-8320-7a2832f2b720 
+2021-03-25 12:46:30,488 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:46:34,413 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:46:37,292 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:46:39,178 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:46:41,284 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:46:44,617 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:46:45,373 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:46:45,734 INFO  [Log] Product Name on search result is: VU, Product Price on search result is: 4,500.00, Product description on search result is: VU 163 cm (65 Inches) 4K Ultra HD Smart Android LED TV 65PM (Black) (2020 Model) 
+2021-03-25 12:46:45,743 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:46:46,113 INFO  [Log] Scrolling to text 'Add to Cart' 
+2021-03-25 12:46:46,118 INFO  [Log] Clicking on 'Add to Cart' button 
+2021-03-25 12:46:46,127 INFO  [Log] Going to CART screen 
+2021-03-25 12:46:46,131 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 12:47:20,489 INFO  [Log] Inside Driver Class 
+2021-03-25 12:47:20,497 INFO  [Log] driver is null 
+2021-03-25 12:47:20,507 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:47:20,520 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:47:38,899 INFO  [Log] Message14d87601-7678-4cf0-8c89-2bd5bb2b1933 
+2021-03-25 12:47:38,910 INFO  [Log] Session Returned by Driver: 14d87601-7678-4cf0-8c89-2bd5bb2b1933 
+2021-03-25 12:47:39,079 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:47:40,886 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:47:46,158 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:47:47,582 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:47:50,363 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:47:53,959 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:47:54,778 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:47:55,088 INFO  [Log] Product Name on search result is: Samsung, Product Price on search result is: 2,43,999.00, Product description on search result is: Samsung 163 cm (65 inches) 4K Ultra HD Smart QLED TV QA65Q95TAKXXL (Carbon Silver) (2020 Model) 
+2021-03-25 12:47:55,093 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:47:55,457 INFO  [Log] Scrolling to text 'Add to Cart' 
+2021-03-25 12:47:55,461 INFO  [Log] Clicking on 'Add to Cart' button 
+2021-03-25 12:47:55,466 INFO  [Log] Going to CART screen 
+2021-03-25 12:47:55,469 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 12:50:02,364 INFO  [Log] Inside Driver Class 
+2021-03-25 12:50:02,377 INFO  [Log] driver is null 
+2021-03-25 12:50:02,389 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:50:02,405 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:50:20,886 INFO  [Log] Message18ee80c4-eb31-46d3-affb-5946df01ed6b 
+2021-03-25 12:50:20,895 INFO  [Log] Session Returned by Driver: 18ee80c4-eb31-46d3-affb-5946df01ed6b 
+2021-03-25 12:50:21,127 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:50:22,876 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:50:26,623 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:50:28,523 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:50:32,893 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:50:33,390 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:50:34,094 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:50:34,382 INFO  [Log] Product Name on search result is: Glassiano, Product Price on search result is: 1,049.00, Product description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED Smart TV 
+2021-03-25 12:50:34,388 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:50:34,658 INFO  [Log] Scrolling to text 'Add to Cart' 
+2021-03-25 12:50:39,663 INFO  [Log] Clicking on 'Add to Cart' button 
+2021-03-25 12:50:44,680 INFO  [Log] Going to CART screen 
+2021-03-25 12:50:49,690 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 12:50:50,512 INFO  [Log] Getting the price of product added to the cart 
+2021-03-25 12:50:50,974 INFO  [Log] Product Price on Checkout screen is: 1,049.00, Product Description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED 
+2021-03-25 12:52:39,136 INFO  [Log] Inside Driver Class 
+2021-03-25 12:52:39,143 INFO  [Log] driver is null 
+2021-03-25 12:52:39,155 INFO  [Log] Capabilities {deviceName: Android-device, platformVersion: 10, udid: 2a64d2c13e047ece} 
+2021-03-25 12:52:39,161 INFO  [Log] http://127.0.0.1:4723/wd/hub 
+2021-03-25 12:52:56,239 INFO  [Log] Message5f5042fe-497f-4638-8202-1e17b601b8b3 
+2021-03-25 12:52:56,253 INFO  [Log] Session Returned by Driver: 5f5042fe-497f-4638-8202-1e17b601b8b3 
+2021-03-25 12:52:56,431 INFO  [Log] Clicking on 'Skip Sign In' button 
+2021-03-25 12:52:58,247 INFO  [Log] Clicking on SEARCH button 
+2021-03-25 12:53:03,141 INFO  [Log] Searching for 65 inch tv on the search bar 
+2021-03-25 12:53:05,211 INFO  [Log] Clicking on first suggested product from search text 
+2021-03-25 12:53:09,595 INFO  [Log] Getting the name of product no. 2 from the search result list 
+2021-03-25 12:53:10,541 INFO  [Log] Getting the price of product no. 2 from the search result list 
+2021-03-25 12:53:11,156 INFO  [Log] Getting the description of product no.2 from the search result list 
+2021-03-25 12:53:11,474 INFO  [Log] Product Name on search result is: Glassiano, Product Price on search result is: 1,049.00, Product description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED Smart TV 
+2021-03-25 12:53:11,493 INFO  [Log] Selecting product no.2 from the search result list 
+2021-03-25 12:53:11,956 INFO  [Log] Scrolling to text: Add to Cart 
+2021-03-25 12:54:03,724 INFO  [Log] Clicking on the 'Cart' button on top right 
+2021-03-25 12:54:26,908 INFO  [Log] Getting the description of product added to the cart 
+2021-03-25 12:54:28,122 INFO  [Log] Getting the price of product added to the cart 
+2021-03-25 12:54:29,265 INFO  [Log] Product Price on Checkout screen is: 1,049.00, Product Description on search result is: Glassiano LED TV Cover for TCL 65 inches L65P1US 4K Ultra HD LED 
