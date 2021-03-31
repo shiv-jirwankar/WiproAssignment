@@ -25,6 +25,9 @@ public class ProductDetailsPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	/**
+	 * click on the cart button present on the top right of the screen
+	 */
 	public CheckoutPage clickOnCartButton()
 	{
 		Log.INFO("Clicking on the 'Cart' button on top right");

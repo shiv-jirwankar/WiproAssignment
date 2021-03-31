@@ -2,6 +2,7 @@ package testSuite;
 
 import java.io.IOException;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -30,6 +31,9 @@ public class VerifyProductDetailsTest {
 	ProductSearchResultPage psr;
 	SignInPage sp;
 	ReadExcelData red;
+	String productNameInSearchResult;
+	String productPriceInSearchResult;
+	String productDescInSearchResult;
 
 	@BeforeSuite
 	public void beforeSuite() {
@@ -49,43 +53,53 @@ public class VerifyProductDetailsTest {
 		red = new ReadExcelData();
 	}
 
+	/**
+	 * Test to verify the value getting updated on the CART icon on the top right of
+	 * the Product details screen. For eg. when user add a product to the cart, then
+	 * on the CART icon on above, the value will be updated to one.
+	 * 
+	 * @throws IOException
+	 */
 	@Test(priority = 1)
-	public void verifyProductDetailsOnCheckoutScreen() throws IOException {
+	public void verifyNumericValueOnCartIcon() throws IOException {
 		sp.clickOnSkipSignInButton().clickOnSearchButton()
 				.searchItems(red.readDataFromExcel("Product to search", "product to search"))
 				.clickOnFirstSuggestedSearchResult();
 
-		// Reading and storing all the required values of a product on search results
-		// screen
-		String productNameInSearchResult = psr.getProductName(2);
-		String productPriceInSearchResult = psr.getProductPrice(2);
-		String productDescInSearchResult = psr.getProductDescription(2);
+		productNameInSearchResult = psr.getProductName(2);
+		productPriceInSearchResult = psr.getProductPrice(2);
+		productDescInSearchResult = psr.getProductDescription(2);
 		Log.INFO("Product Name on search result is: " + productNameInSearchResult
 				+ ", Product Price on search result is: " + productPriceInSearchResult
 				+ ", Product description on search result is: " + productDescInSearchResult);
 
 		psr.selectProduct(2);
-
 		utils.scrollToTextContains("Add to Cart");
-
 		pdp.addToCartButton.click();
 		utils.isElementPresent(pdp.cartButton, 10);
-		pdp.clickOnCartButton();
+		String numericValueOnCartIcon = pdp.cartButton.getText();
+		String expectedNumericValueOnCart = red.readDataFromExcel("Sheet", "expected card value on icon");
 
-		// Reading and storing all the required values of a product on checkout screen
-		// removing the '...' string from the product description
+		Assert.assertEquals(numericValueOnCartIcon, expectedNumericValueOnCart);
+	}
+
+	/**
+	 * Test to verify the 'Product Description' and 'Product Price' are same in 'Product
+	 * search result screen' and 'Checkout screen'
+	 * 
+	 * @throws IOException
+	 */
+	@Test(priority = 2)
+	public void verifyProductDetailsOnCheckoutScreen() throws IOException {
+		pdp.clickOnCartButton();
 		String productDescOnCheckout = cp.getProductDescription().replace("...", "");
 		String productPriceOnCheckout = cp.getProductPrice().replace("₹", "");
 		Log.INFO("Product Price on Checkout screen is: " + productPriceOnCheckout
 				+ ", Product Description on search result is: " + productDescOnCheckout);
-
-		// using SoftAssert to assert 'Product desc' and 'Product Price' values on two
-		// different screens
 		SoftAssert sa = new SoftAssert();
 		sa.assertTrue(productDescInSearchResult.contains(productDescOnCheckout));
 		sa.assertEquals(productPriceOnCheckout, productPriceInSearchResult);
 		sa.assertAll();
-
 	}
 
 }

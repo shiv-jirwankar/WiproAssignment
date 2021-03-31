@@ -1,7 +1,5 @@
 package pageObjects;
 
-import java.util.List;
-
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.AppiumDriver;
@@ -23,12 +21,15 @@ public class SignInPage {
 		this.utility = utility;
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
-	
-	public HomeScreen clickOnSkipSignInButton()
-	{
+
+	/**
+	 * Click on the Skip Sign In button on the login screen
+	 *
+	 */
+	public HomeScreen clickOnSkipSignInButton() {
 		Log.INFO("Clicking on 'Skip Sign In' button");
 		skipSignInButton.click();
-		
+
 		return new HomeScreen(driver, utility);
 	}
 }

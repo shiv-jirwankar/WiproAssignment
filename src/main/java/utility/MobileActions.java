@@ -29,22 +29,28 @@ public class MobileActions{
 
 	private AppiumDriver<MobileElement> driver;
 
-
-	/*
-	 * Added by Shiv
+	/**
+	 * Clicks on the back button of the device
 	 */
-
 	public void clickOnBackButtonOfDevice() {
 		// ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
 		Log.INFO("Navigating back from the current screen");
 		((AndroidDriver<MobileElement>) driver).pressKey(new KeyEvent().withKey(AndroidKey.BACK));
 	}
 
+	/**
+	 * Clicks on the Home button of the device
+	 */
 	public void clickOnHomeButtonOfDevice() {
 		// ((AndroidDriver) driver).pressKeyCode(AndroidKeyCode.BACK);
 		((AndroidDriver<MobileElement>) driver).pressKey(new KeyEvent().withKey(AndroidKey.HOME));
 	}
 
+	/**
+	 * Explicit wait method to wait till the element is present
+	 * @param element
+	 * @param timeOut
+	 */
 	public void isElementPresent(MobileElement element, int timeOut) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, timeOut);
@@ -54,6 +60,11 @@ public class MobileActions{
 		}
 	}
 	
+	/**
+	 * Explicit wait method to wait till the element is present using 'presenceOfElementLocated()' method
+	 * @param element
+	 * @param timeOut
+	 */
 	public void waitTillPresenceOfElementLocated(By element, int timeOut) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, timeOut);
@@ -63,6 +74,11 @@ public class MobileActions{
 		}
 	}
 
+	/**
+	 * Explicit wait method to check if the element is not present
+	 * @param element
+	 * @param timeOut
+	 */
 	public void isElementNotPresent(MobileElement element, int timeOut) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, timeOut);
@@ -72,6 +88,10 @@ public class MobileActions{
 		}
 	}
 
+	/**
+	 * Scroll method to scroll till text
+	 * @param text
+	 */
 	public void scrollToText(String text) {
 		Log.INFO("Scrolling to text: " + text);
 		try {
@@ -82,6 +102,10 @@ public class MobileActions{
 		}
 	}
 
+	/**
+	 * Scroll to point containing the desired text
+	 * @param text
+	 */
 	public void scrollToTextContains(String text) {
 		Log.INFO("Scrolling to text: " + text);
 		((AndroidDriver<MobileElement>) driver).findElementByAndroidUIAutomator(
@@ -89,6 +113,10 @@ public class MobileActions{
 						+ text + "\").instance(0))");
 	}
 
+	/**
+	 * Scroll to text and click 
+	 * @param text
+	 */
 	public void scrollToTextAndClick(String text) {
 		Log.INFO("Scrolling to text: " + text);
 		((AndroidDriver<MobileElement>) driver).findElementByAndroidUIAutomator(
@@ -97,6 +125,11 @@ public class MobileActions{
 				.click();
 	}
 
+	/**
+	 * Scroll to text
+	 * @param eleResourceId
+	 * @param text
+	 */
 	public void scrollToText(String eleResourceId, String text) {
 		((AndroidDriver<MobileElement>) driver)
 				.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()" + ".resourceId(\"" + eleResourceId
@@ -108,6 +141,7 @@ public class MobileActions{
 	 * scroll screen up. Start point element has to be passed as the argument. And
 	 * scroll up fraction is for end point scroll.
 	 */
+	@SuppressWarnings("rawtypes")
 	public void scrollUpScreen(MobileElement ele, double scrollUpFraction) {
 		Dimension size = driver.manage().window().getSize();
 		Point locationSendHistory = ele.getLocation();
@@ -124,7 +158,9 @@ public class MobileActions{
 				.moveTo(point(anchor, endPoint)).release().perform();
 	}
 
-	
+	/**
+	 * Hides the keyboard if it is opened
+	 */
 	public void hideKeyboard() {
 		try {
 			driver.hideKeyboard();

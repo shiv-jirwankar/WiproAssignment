@@ -48,17 +48,13 @@ public class Init {
 			capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY,
 					"com.amazon.mShop.splashscreen.StartupActivity");
 			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-
 			capabilities.setCapability("autoGrantPermissions", "true");
 			capabilities.setCapability("autoDismissAlerts", "true");
 			capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "60");
 			capabilities.setCapability(MobileCapabilityType.NO_RESET, "false");
-			// capabilities.setCapability(MobileCapabilityType.FULL_RESET, "false");
-
 			driver = new AndroidDriver<MobileElement>(new URL(Url), capabilities);
-			// driver = new AndroidDriver<MobileElement>(server.getUrl(), capabilities);
 			driver.manage().timeouts().implicitlyWait(Constant.implicitWait, TimeUnit.SECONDS);
-			// driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+
 		}
 
 		catch (Exception ex) {
@@ -71,19 +67,34 @@ public class Init {
 		return driver;
 	}
 
+	/**
+	 * gets the driver
+	 * @return
+	 */
 	public AppiumDriver<MobileElement> getDriver() {
 		return localDriver.get();
 	}
 
+	/**
+	 * sets the driver
+	 * @param driver
+	 */
 	public void setDriver(AppiumDriver<MobileElement> driver) {
 		localDriver.set(driver);
 	}
 
+	/**
+	 * gets device property from the desired capabiliies
+	 * @param property
+	 * @return
+	 */
 	public String getDeviceProperty(String property) {
 		property = getDriver().getCapabilities().getCapability(property).toString();
 		return property;
 	}
-
+/**
+ * Quits the driver
+ */
 	public void quitDriver() {
 		try {
 			getDriver().quit();
@@ -93,6 +104,9 @@ public class Init {
 		}
 	}
 
+	/**
+	 * closes the driver instance
+	 */
 	public void closeDriver() {
 		try {
 			getDriver().close();
@@ -103,6 +117,9 @@ public class Init {
 		}
 	}
 
+	/**
+	 * Launches the app
+	 */
 	public void launchApp() {
 		try {
 			getDriver().launchApp();

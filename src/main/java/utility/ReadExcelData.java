@@ -14,6 +14,13 @@ public class ReadExcelData {
 
 	DataFormatter formatter = new DataFormatter(Locale.US);
 
+	/**reads the desired test data from the excel sheet based on the parameters passed
+	 * 
+	 * @param sheetName
+	 * @param testName
+	 * @return String data value from the excel sheet
+	 * @throws IOException
+	 */
 	@SuppressWarnings("resource")
 	public String readDataFromExcel(String sheetName, String testName) throws IOException
 
@@ -43,5 +50,4 @@ public class ReadExcelData {
 
 	}
 
-	
 }

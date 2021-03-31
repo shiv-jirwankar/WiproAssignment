@@ -31,6 +31,9 @@ public class HomeScreen {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
+	/**
+	 * Click on the Search button on the Home Screen
+	 */
 	public HomeScreen clickOnSearchButton() {
 		Log.INFO("Clicking on SEARCH button");
 		utility.isElementPresent(searchButton, 10);
@@ -39,6 +42,11 @@ public class HomeScreen {
 		return this;
 	}
 
+	/**
+	 * Search items on the search field
+	 * @param itemName
+	 *  
+	 */
 	public HomeScreen searchItems(String itemName) {
 		Log.INFO("Searching for " + itemName + " on the search bar");
 		try {
@@ -52,6 +60,9 @@ public class HomeScreen {
 		return this;
 	}
 
+	/**
+	 * Click on the first suggestion from the searched item
+	 */
 	public ProductSearchResultPage clickOnFirstSuggestedSearchResult() {
 		Log.INFO("Clicking on first suggested product from search text");
 		utility.isElementPresent(searchSuggestionFirst, 10);

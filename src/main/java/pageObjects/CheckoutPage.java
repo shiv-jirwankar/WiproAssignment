@@ -25,12 +25,20 @@ public class CheckoutPage {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
+	/**
+	 * Gets Product Description on the Checkout screen
+	 * @return String value of Product description
+	 */
 	public String getProductDescription()
 	{
 		Log.INFO("Getting the description of product added to the cart");
 		return productDesc.getAttribute("content-desc");	
 	}
 	
+	/**
+	 * Gets Product Price on the checkout screen
+	 * @return String value of Product Price
+	 */
 	public String getProductPrice()
 	{
 		Log.INFO("Getting the price of product added to the cart");
